@@ -3,6 +3,11 @@ Playing-the-system
 
 This repository represents the code that is described our project for extracting player strategies in Borderland Science, an online science discovery game, which, in its turn, includes a multi-sequence alignment game. We approached this task with Behavioural Cloning. Previous research has largely focused on classical Reinforcement Learning (RL) methods and missed the opportunity to use the real experience of people, which often surpasses existing methods of multiple sequence alignments. Our results show that these approach can match human performance by learning basic dynamics and rules.
 
+# BLS_imitation_learning
+
+[![Actions Status](https://github.com/renata-nerenata/Playing-the-system/workflows/Linter/badge.svg)](https://github.com/renata-nerenata/Playing-the-system/actions)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a48adcf1d95882daed37/test_coverage)](https://codeclimate.com/github/renata-nerenata/Playing-the-system/test_coverage)
+
 
 Project Organization
 ------------
