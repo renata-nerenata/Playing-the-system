@@ -63,7 +63,7 @@ Project Organization
 ```console
 python inference.py --model <model_type> --puzzle <puzzle> --accepted_pairs <accepted_pairs> --steps <used_gaps>
 ```
-![asciicast](https://asciinema.org/a/EJjTG7Fc5tDwpe5ouZSXEeESA)
+[![asciicast](https://asciinema.org/a/EJjTG7Fc5tDwpe5ouZSXEeESA.svg)](https://asciinema.org/a/EJjTG7Fc5tDwpe5ouZSXEeESA)
 
-# Example:
-![img.png](reports/figures/img.png)
+### Example:
+![Alt Text](reports/figures/puzzles_subplots.png)
