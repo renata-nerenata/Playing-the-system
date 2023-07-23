@@ -61,6 +61,9 @@ Project Organization
 ## Pre-trained models
 
 ```console
-python inference.py --puzzle <puzzle> --model <model_type>
+python inference.py --model <model_type> --puzzle <puzzle> --accepted_pairs <accepted_pairs> --steps <used_gaps>
 ```
---ADD DEMO
+![asciicast](https://asciinema.org/a/EJjTG7Fc5tDwpe5ouZSXEeESA)
+
+# Example:
+![img.png](reports/figures/img.png)
