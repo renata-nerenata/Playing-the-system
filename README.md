@@ -59,7 +59,7 @@ Project Organization
 --------
 
 ## Environment
-#  Unix-like system
+###  Unix-like system
 ```console
 # Create a virtual environment
 python -m venv env
@@ -71,7 +71,7 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-#  Windows system
+###  Windows system
 ```console
 # Create a virtual environment
 python -m venv env
