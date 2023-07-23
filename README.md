@@ -58,12 +58,38 @@ Project Organization
 
 --------
 
+## Environment
+#  Unix-like system
+```console
+# Create a virtual environment
+python -m venv env
+
+# Activate the virtual environment
+source env/bin/activate
+
+# Install packages from requirements.txt
+pip install -r requirements.txt
+```
+
+#  Windows system
+```console
+# Create a virtual environment
+python -m venv env
+
+# Activate the virtual environment
+env\Scripts\activate
+
+# Install packages from requirements.txt
+pip install -r requirements.txt
+```
+
 ## Pre-trained models
 
 ```console
 python inference.py --model <model_type> --puzzle <puzzle> --accepted_pairs <accepted_pairs> --steps <used_gaps>
 ```
 [![asciicast](https://asciinema.org/a/EJjTG7Fc5tDwpe5ouZSXEeESA.svg)](https://asciinema.org/a/EJjTG7Fc5tDwpe5ouZSXEeESA)
+
 
 ### Example:
 ![Alt Text](reports/figures/puzzles_subplots.png)
