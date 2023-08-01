@@ -12,7 +12,7 @@ def main(model, puzzle, accepted_pairs, num_step):
     if model == 'FCN':
         define_custom_loss()
 
-        model = tf.keras.models.load_model("models/FCN_30000")
+        model = tf.keras.models.load_model("models/FCN")
 
         try:
             logging.info("Initializing Puzzle Inference...")
