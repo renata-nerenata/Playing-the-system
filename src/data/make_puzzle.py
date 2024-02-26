@@ -90,11 +90,20 @@ class PuzzleInference:
         return tr
 
     def restore_prediction_tensor(self):
-        i_restored = np.moveaxis(self.pred_matrix, -1, 1)
-        reshaped_matrix = i_restored.flatten()
-        min_elements = sorted(heapq.nsmallest(self.n_gaps, reshaped_matrix))
-        result = np.where(np.isin(i_restored, min_elements), 1, 0)
-        return result[0][0][2:]
+        if self.pred_matrix is not None and 'output_mse' in self.pred_matrix:
+            pred_matrix_array = self.pred_matrix['output_mse']
+            if pred_matrix_array.ndim >= 3:
+                i_restored = np.moveaxis(pred_matrix_array, -1, 1)
+                reshaped_matrix = i_restored.flatten()
+                min_elements = sorted(heapq.nsmallest(self.n_gaps, reshaped_matrix))
+                result = np.where(np.isin(i_restored, min_elements), 1, 0)
+                return result[0][0][2:]
+            else:
+                logging.error("pred_matrix_array does not have the expected dimensions.")
+                return np.array([])
+        else:
+            logging.error("'output_mse' key not found in pred_matrix.")
+            return np.array([])
 
     def find_indexes_of_ones_tensor(self):
         indexes = tf.where(tf.equal(self.restore_prediction_tensor(), 1))
